@@ -19,9 +19,9 @@ def get_books_bd():
     return len([book for book in books if book['type'] == 'bd'])
 
 # 4) Que renvoie la requête XPath suivante :  /library/library/ancestor-or-self::library
-def get_library():
-    with open('books.xml', 'r') as f:
-        xml = f.read()
-        soup = bs4.BeautifulSoup(xml, 'xml')
-        return soup.find('library')
+La requête renvoie
+<book type="roman">
+	<title>toto5</title>
+	<author>titi</author>
+</book>
 
